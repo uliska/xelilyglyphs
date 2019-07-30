@@ -1,14 +1,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                                        %
-%      This file is part of the 'lilyglyphs' LaTeX package.              %
+%      This file is part of the 'xelilyglyphs' LaTeX package.            %
 %                                ==========                              %
 %                                                                        %
-%              https://github.com/openlilylib/lilyglyphs                 %
-%               http://www.openlilylib.org/lilyglyphs                    %
+%              https://github.com/uliska/xelilyglyphs                    %
 %                                                                        %
-%  Copyright 2012-2013 Urs Liska and others, ul@openlilylib.org          %
+%  Copyright 2012-2013, 2019 Urs Liska and others, ul@openlilylib.org    %
 %                                                                        %
-%  'lilyglyphs' is free software: you can redistribute it and/or modify  %
+%  'xelilyglyphs' is free software: you can redistribute it and/or modify%
 %  it under the terms of the LaTeX Project Public License, either        %
 %  version 1.3 of this license or (at your option) any later version.    %
 %  You may find the latest version of this license at                    %
@@ -31,8 +30,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[oneside,11pt]{article}
-\usepackage{lilyglyphsStyle}
-\usepackage{lilyglyphsManualFonts}
+\usepackage{xelilyglyphsStyle}
+\usepackage{xelilyglyphsManualFonts}
 
 \pagestyle{empty}
 
@@ -44,12 +43,12 @@
 
 \begin{document}
 \begin{center}
-{ \Huge \lilyglyphs }
+{ \Huge \xelilyglyphs }
 
 \bigskip
 { \Large Urs Liska }
 
-\emph{September 2013} 
+\emph{September 2013}
 
 \end{center}
 
@@ -62,28 +61,28 @@ You are preparing such documents for publication and have always missed the abil
 In m.\,24 the \decrescHairpin{} lasts from the 2\superscript{nd} \halfNote{} to the \lilyDynamics{sf} on the 11\superscript{th} \semiquaverDown[raise=-.5].
 \end{quote}
 
-With the new package \lilyglyphs{} you can easily insert the notational elements of the LilyPond%
+With the new package \xelilyglyphs{} you can easily insert the notational elements of the LilyPond%
 \footnote{\url{http://www.lilypond.org}}
 engraving software in your text documents.
 Accidentals like \flat{} or \sharp, but also articulation scripts (\hspace{.65ex}\fermata{}) and time signatures such as \lilyTimeCHalf{} or \lilyTimeSignature{5\,+\,7}{8} are readily available.
 But you can also insert arbitrary notational constructs like this mockup example \lilyFancyExample{} into your text or even make scanned images available as “characters”.
 This package may greatly extend your typographical options when authoring or typesetting critical reports, analytical texts or teaching/exam material.
 
-One thing that sets \lilyglyphs{} apart from other solutions I had investigated is that one isn't restricted to a set of predefined symbols but is able to print \emph{any notation} that can be realized with LilyPond. 
+One thing that sets \xelilyglyphs{} apart from other solutions I had investigated is that one isn't restricted to a set of predefined symbols but is able to print \emph{any notation} that can be realized with LilyPond.
 
 \footnotesize
-The other nice thing is that the glyphs \halfNoteRest{} scale well with the surrounding font size, 
+The other nice thing is that the glyphs \halfNoteRest{} scale well with the surrounding font size,
 \large making it easy \halfNoteRest{} to incorporate them into continuous text.
 \normalsize By default the glyphs scale automatically but they can also be scaled \clefF[scale=.4] manually, either individually or document-wise \clefG[scale=1.5,raise=-3.1].
 
 \medskip
-Sounds too good to be true? Well, there’s one catch to it: \lilyglyphs{} is a \LaTeX{}%
+Sounds too good to be true? Well, there’s one catch to it: \xelilyglyphs{} is a \LaTeX{}%
 \footnote{\url{http://www.latex-project.org}}
-package, so you may have to consider a change in mind-set. 
+package, so you may have to consider a change in mind-set.
 But if the above examples whet your appetite and match your professional needs you should really consider giving it a serious try -- it's all Free Software anyway.
 You may find reading my essay on the advantages of plain text toolchains helpful too%
 \footnote{\url{http://lilypondblog.org/2013/07/plain-text-files-in-music/}}.
- 
-For more information you may visit \lilyglyphs' project homepage \url{http://openlilylib.org/lilyglyphs} or contact us through \href{mailto:info@openlilylib.org}{info@openlilylib.org}.
+
+For more information you may contact us through \href{mailto:git@ursliska.de}{git@ursliska.de}.
 
 \end{document}
